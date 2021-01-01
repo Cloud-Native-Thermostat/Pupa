@@ -2,7 +2,10 @@ name: CI
 
 on:
   push:
-    branches: [ github-actions ]
+    branches:
+    - main
+    tags:
+    - "v*"
 
 jobs:
   platformio-build:
@@ -23,3 +26,4 @@ jobs:
         with:
           name: firmware.elf
           path: .pio/build/d1_mini_lite/firmware.elf
+        if: ${{ github.ref == 'ref/head/v*' }}
