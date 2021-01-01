@@ -1,2 +1,10 @@
 # Pupa
-IoT C++ based Sensor &amp; Switch MQTT Firmware
+
+IoT C++ based Temperature Sensor &amp; Switch MQTT Firmware
+
+## Build
+
+```bash
+pio ci --lib include --project-conf platformio.ini .
+```
+

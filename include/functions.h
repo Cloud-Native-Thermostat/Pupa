@@ -32,13 +32,13 @@ void relaySwitch( bool targetStatus ) {
 
     Serial.println("ON");
 
-    digitalWrite(RELAY_PIN, HIGH);
+    digitalWrite(MODULE_01_SWITCH_PIN, LOW);
 
   } else {
 
     Serial.println("OFF");
 
-    digitalWrite(RELAY_PIN, LOW);
+    digitalWrite(MODULE_01_SWITCH_PIN, HIGH);
 
   }
 

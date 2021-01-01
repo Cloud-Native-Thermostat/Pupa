@@ -3,7 +3,8 @@
 #define AIO_SERVERPORT     1883                   // Use 8883 for SSL
 #define AIO_USERNAME       "iot"
 #define AIO_KEY            "iot"
-#define RELAY_PIN           2
-#define SWITCH_FEED         AIO_USERNAME "/" ROOM "/" SWITCH_NAME "/switch"
-#define TEMPERATURE_FEED    AIO_USERNAME "/" ROOM "/temperature"
-#define HUMIDITY_FEED       AIO_USERNAME "/" ROOM "/humidity"
+
+#define MODULE_01_SWITCH_PIN           2
+#define MODULE_01_SWITCH_FEED         AIO_USERNAME "/" ROOM "/" MODULE_01_NAME "/switch"
+#define MODULE_01_TEMPERATURE_FEED    AIO_USERNAME "/" ROOM "/" MODULE_01_NAME "/temperature"
+#define MODULE_01_HUMIDITY_FEED       AIO_USERNAME "/" ROOM "/" MODULE_01_NAME "/humidity"

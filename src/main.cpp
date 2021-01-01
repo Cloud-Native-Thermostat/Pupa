@@ -12,10 +12,10 @@ WiFiClient client;
 Adafruit_MQTT_Client mqtt(&client, AIO_SERVER, AIO_SERVERPORT, AIO_USERNAME, AIO_KEY);
 
 
-Adafruit_MQTT_Publish temperaturePub = Adafruit_MQTT_Publish(&mqtt, TEMPERATURE_FEED);
-Adafruit_MQTT_Publish humidityPub = Adafruit_MQTT_Publish(&mqtt, HUMIDITY_FEED);
+Adafruit_MQTT_Publish temperaturePub = Adafruit_MQTT_Publish(&mqtt, MODULE_01_TEMPERATURE_FEED);
+Adafruit_MQTT_Publish humidityPub = Adafruit_MQTT_Publish(&mqtt, MODULE_01_HUMIDITY_FEED);
 
-Adafruit_MQTT_Subscribe switchTrigger = Adafruit_MQTT_Subscribe(&mqtt, SWITCH_FEED);
+Adafruit_MQTT_Subscribe switchTrigger = Adafruit_MQTT_Subscribe(&mqtt, MODULE_01_SWITCH_FEED);
 
 #include <functions.h>
 
@@ -44,7 +44,7 @@ void setup() {
   Serial.println("WiFi connected");
   Serial.println("IP address: "); Serial.println(WiFi.localIP());
 
-  pinMode(RELAY_PIN, OUTPUT);
+  pinMode(MODULE_01_SWITCH_PIN, OUTPUT);
 
   relaySwitch(false);
 
