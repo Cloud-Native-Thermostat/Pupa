@@ -1,0 +1,9 @@
+#define ROOM              "kitchen"
+#define SWITCH_NAME       "shelf"
+
+#define WLAN_SSID         "WIFI_SSID"
+#define WLAN_PASS         "WIFI_PASS"
+
+#include "defaults.h"
+
+// #define MQTT_SERVER        "mqtt.example.com" // default is mqtt
