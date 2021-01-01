@@ -2,7 +2,7 @@
 
 ![CI](https://github.com/Cloud-Native-Thermostat/Pupa/workflows/CI/badge.svg)
 
-IoT C++ based Temperature Sensor &amp; Switch MQTT Firmware
+IoT C++ based Temperature Sensor &amp; Switch MQTT Firmware using [PlatformIO](https://platformio.org)
 
 ## Build
 
